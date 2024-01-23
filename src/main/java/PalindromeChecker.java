@@ -37,7 +37,9 @@ public void tester()
 }
 public boolean palindrome(String word)
 {
-  String sNew = word.toLowercase();
+  String sNew = new String();
+  sNew = lowerCase(word);
+  sNew = noSpace(sNew);
   for(int i =0; i < word.length() / 2; i++)
     {
       if(sNew.charAt(i) != word.charAt(sNew.length() - (i + 1)))
@@ -47,10 +49,23 @@ public boolean palindrome(String word)
     }
   return true;
 }
-public String reverse(String str)
+public String lowerCase(String str)
 {
     String sNew = new String();
-    //your code here
+    sNew = str.toLowercase();
+    return sNew;
+}
+  public String noSpace(String str)
+{
+    String sNew = new String();
+  sNew = "";
+    for(int i = 0; i < str.length(); i++)
+      {
+        if(str.charAt(i) != ' ')
+        {
+          sNew = sNew + str.charAt(i);
+        }
+      }
     return sNew;
 }
 }
