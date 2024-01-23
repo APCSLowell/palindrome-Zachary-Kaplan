@@ -39,7 +39,7 @@ public boolean palindrome(String word)
 {
   String sNew = new String();
   sNew = lowerCase(word);
-  sNew = noSpace(sNew);
+  sNew = onlyChar(sNew);
   for(int i =0; i < word.length() / 2; i++)
     {
       if(sNew.charAt(i) != word.charAt(sNew.length() - (i + 1)))
@@ -55,17 +55,18 @@ public String lowerCase(String str)
     sNew = str.toLowercase();
     return sNew;
 }
-  public String noSpace(String str)
+  public String onlyChar(String str)
 {
     String sNew = new String();
   sNew = "";
     for(int i = 0; i < str.length(); i++)
       {
-        if(str.charAt(i) != ' ')
+        if(Charater.isLetter(str.charAt(i)))
         {
           sNew = sNew + str.charAt(i);
         }
       }
     return sNew;
 }
+
 }
