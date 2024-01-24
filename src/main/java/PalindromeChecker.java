@@ -51,9 +51,7 @@ public boolean palindrome(String word)
 }
 public String lowerCase(String str)
 {
-    String sNew = new String();
-    sNew = str.toLowercase();
-    return sNew;
+    return str.toLowercase();
 }
   public String onlyChar(String str)
 {
