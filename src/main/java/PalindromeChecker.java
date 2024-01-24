@@ -37,12 +37,11 @@ public void tester()
 }
 public boolean palindrome(String word)
 {
-  String sNew = new String();
   sNew = lowerCase(word);
   sNew = onlyChar(sNew);
   for(int i =0; i < word.length() / 2; i++)
     {
-      if(sNew.charAt(i) != word.charAt(sNew.length() - (i + 1)))
+      if(sNew.charAt(i) != sNew.charAt(sNew.length() - (i + 1)))
       {
         return false;
       }
