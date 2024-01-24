@@ -49,11 +49,11 @@ public boolean palindrome(String word)
     }
   return true;
 }
-public String lowerCase(String str)
+public static String lowerCase(String str)
 {
     return str.toLowercase();
 }
-  public String onlyChar(String str)
+  public static String onlyChar(String str)
 {
     String sNew = new String();
   sNew = "";
