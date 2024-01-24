@@ -49,19 +49,19 @@ public boolean palindrome(String word)
     }
   return true;
 }
-public static String lowerCase(String str)
+public static String lowerCase(String guh)
 {
-    return str.toLowercase();
+    return guh.toLowercase();
 }
-public static String onlyChar(String str)
+public static String onlyChar(String wuh)
 {
    String sNew = new String();
    sNew = "";
-   for(int i = 0; i < str.length(); i++)
+   for(int i = 0; i < wuh.length(); i++)
     {
-       if(Charater.isLetter(str.charAt(i)))
+       if(Charater.isLetter(wuh.charAt(i)))
        {
-         sNew = sNew + str.charAt(i);
+         sNew = sNew + wuh.charAt(i);
        }
     }
    return sNew;
