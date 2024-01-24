@@ -53,18 +53,19 @@ public static String lowerCase(String str)
 {
     return str.toLowercase();
 }
-  public static String onlyChar(String str)
+public static String onlyChar(String str)
 {
-    String sNew = new String();
-  sNew = "";
-    for(int i = 0; i < str.length(); i++)
-      {
-        if(Charater.isLetter(str.charAt(i)))
-        {
-          sNew = sNew + str.charAt(i);
-        }
-      }
-    return sNew;
+   String sNew = new String();
+   sNew = "";
+   for(int i = 0; i < str.length(); i++)
+    {
+       if(Charater.isLetter(str.charAt(i)))
+       {
+         sNew = sNew + str.charAt(i);
+       }
+    }
+   return sNew;
 }
-
+public 
+  
 }
