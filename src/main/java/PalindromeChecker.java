@@ -50,7 +50,7 @@ public boolean palindrome(String word)
 }
 public static String lowerCase(String guh)
 {
-    return guh.toLowercase();
+    return guh.toLowerCase();
 }
 public static String onlyChar(String wuh)
 {
