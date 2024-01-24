@@ -65,7 +65,5 @@ public static String onlyChar(String str)
        }
     }
    return sNew;
-}
-public 
-  
+} 
 }
