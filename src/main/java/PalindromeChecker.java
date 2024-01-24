@@ -58,7 +58,7 @@ public static String onlyChar(String wuh)
    sNew = "";
    for(int i = 0; i < wuh.length(); i++)
     {
-       if(Charater.isLetter(wuh.charAt(i)))
+       if(Character.isLetter(wuh.charAt(i)))
        {
          sNew = sNew + wuh.charAt(i);
        }
